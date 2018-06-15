@@ -1,5 +1,3 @@
-const sharp = require('sharp');
-
 const webp = (opts={}) => {
   const quality = typeof opts.quality !== 'undefined' ? opts.quality : 80;
   const alphaQuality = typeof opts.alphaQuality !== 'undefined' ? opts.alphaQuality : 100;
@@ -33,8 +31,8 @@ const webp = (opts={}) => {
     finish = -input.outputs.length + 1;
     for (let i in input.outputs) {
       if (input.outputs[i].toConvert) {
-        sharp(input.outputs[i].buffer)
-          .toFormat(sharp.format.webp)
+        utils.sharp(input.outputs[i].buffer)
+          .toFormat(utils.sharp.format.webp)
           .webp({
             quality,
             alphaQuality,

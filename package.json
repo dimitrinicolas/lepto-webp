@@ -1,6 +1,6 @@
 {
   "name": "lepto-webp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lepto plugin for creating webp alternatives",
   "main": "lepto-webp.js",
   "repository": {
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/dimitrinicolas/lepto-webp/issues"
   },
-  "homepage": "https://github.com/dimitrinicolas/lepto-webp#readme",
-  "dependencies": {
-    "sharp": "^0.20.3"
-  }
+  "homepage": "https://github.com/dimitrinicolas/lepto-webp#readme"
 }
